@@ -1,0 +1,29 @@
+{
+  "name": "teste_automatizado_ebacshop",
+  "version": "1.0.0",
+  "description": "Automação do fluxo de cadastro de usuário e compra na loja virtual EBAC-Shop, com Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eduferr/teste_automatizado_ebacShop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Eduferr/teste_automatizado_ebacShop/issues"
+  },
+  "homepage": "https://github.com/Eduferr/teste_automatizado_ebacShop#readme",
+  "devDependencies": {
+    "cypress": "^15.3.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.0.0"
+  }
+}
