@@ -23,3 +23,4 @@ class CadastroPage {
 }
 
 module.exports = new CadastroPage();
+
