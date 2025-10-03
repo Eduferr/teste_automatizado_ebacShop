@@ -1,6 +1,7 @@
 const { faker } = require('@faker-js/faker');
 
-class CadastroFactory {
+class UsuarioFaker {
+    // Gera um usuário fictício para testes de cadastro e login
     static generateUser() {
         const nome = faker.person.firstName();
         const email = faker.internet.email(nome);
@@ -9,6 +10,11 @@ class CadastroFactory {
 
         return { nome, email, senha, username };
     }
+
+    static generateInvalidEmail() {
+        const emailInvalido = faker.internet.email(); // Gera uma string aleatória que não é um email válido
+        return emailInvalido;
+    }
 }
 
-module.exports = CadastroFactory;
+module.exports = UsuarioFaker;
