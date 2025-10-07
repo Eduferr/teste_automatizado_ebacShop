@@ -1,5 +1,5 @@
 const LoginPage = require("../page_objects/LoginPage");
-const UsuarioFaker = require("../factories/usuarioFaker");
+const UsuarioFaker = require("../../factories/usuarioFaker");
 const { faker } = require("@faker-js/faker");
 
 class LoginActions {

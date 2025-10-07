@@ -26,6 +26,10 @@ describe('Suíte - Carrinho de Compras', () => {
         });
     });
 
+    it('Deve efetuar a compra selecionando o item na lista de produtos', () => {
+        //TODO
+    });
+
     
 
 });
