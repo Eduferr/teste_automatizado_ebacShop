@@ -1,6 +1,3 @@
-# Teste_automatizado_ebacShop
-Automação do fluxo de cadastro de usuário e compra na loja virtual EBAC-Shop, com Cypress
-
 # Projeto de Teste Automatizado – EBACSHOP
 
 Este repositório contém o projeto de automação de testes do **EBACSHOP**, uma aplicação de e-commerce desenvolvida para fins educacionais.  
