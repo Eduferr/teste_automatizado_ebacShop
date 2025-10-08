@@ -1,8 +1,7 @@
 /// <reference types="cypress" />
 
 const comprasActions = require('../../support/actions/comprasActions');
-const ComprasActions = require('../../support/actions/comprasActions');
-const loginactions = require('../../support/actions/loginactions');
+const loginActions = require('../../support/actions/loginactions');
 
 describe('Suíte - Carrinho de Compras', () => {
 
@@ -20,7 +19,7 @@ describe('Suíte - Carrinho de Compras', () => {
         comprasActions.validarMensagemDeSucesso(`${produto.quantidade} × “${produto.nome}” foram adicionados no seu carrinho.`);
         comprasActions.verCarrinho();
         comprasActions.concluirCompra();
-        loginactions.loginComCredenciaisValidas();
+        loginActions.loginComCredenciaisValidas();
         comprasActions.pagarCompra();
         comprasActions.validarMensagemDeSucessoOrder('Obrigado. Seu pedido foi recebido.');
         });

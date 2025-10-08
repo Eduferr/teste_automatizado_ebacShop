@@ -5,10 +5,10 @@ const { faker } = require("@faker-js/faker");
 class LoginActions {
     // login com credenciais válidas
     loginComCredenciaisValidas() {
-        const email = Cypress.env('email');
-        const senha = Cypress.env('senha');
+        //const email = Cypress.env('email');
+        //const senha = Cypress.env('senha');
         //console.log('DEBUG email:', email, 'senha:', senha);
-        LoginPage.acessarLogin(email, senha);
+        LoginPage.acessarLogin("qatestando@gmail.com", "654321");
         LoginPage.submitLogin();
     }
     // login com credenciais inválidas
