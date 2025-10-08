@@ -11,6 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'NO_COLOR=1 npm test'
+                
             }
         }
     }
