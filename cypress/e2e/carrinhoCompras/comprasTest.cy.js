@@ -9,7 +9,7 @@ describe('Suíte - Carrinho de Compras', () => {
         cy.visit('/produtos'); // Visita a página inicial antes de cada teste
     });
 
-    it.only('Deve efetuar a compra buscando pelo nome do produto', () => {
+    it('Deve efetuar a compra buscando pelo nome do produto', () => {
         cy.fixture('produtos').then((produtos) => {// Importa os dados do arquivo JSON
             const produto = produtos[0];
 
