@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 const usuarioFaker = require("../../factories/usuarioFaker");
-const cadastroActions = require('../../support/actions/cadastroActions');
+const cadastroActions = require('../../support/actions/CadastroActions');
 
 describe('Suíte - Criar Conta de usuário', () => {
 

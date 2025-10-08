@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-const comprasActions = require('../../support/actions/comprasActions');
-const loginActions = require('../../support/actions/loginActions');
+const comprasActions = require('../../support/actions/ComprasActions');
+const loginActions = require('../../support/actions/LoginActions');
 
 describe('Suíte - Carrinho de Compras', () => {
 
@@ -25,7 +25,7 @@ describe('Suíte - Carrinho de Compras', () => {
         });
     });
 
-    it('Deve efetuar a compra selecionando o item na lista de produtos', () => {
+    it.skip('Deve efetuar a compra selecionando o item na lista de produtos', () => {
         //TODO
     });
 
