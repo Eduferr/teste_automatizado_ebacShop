@@ -26,12 +26,16 @@ describe('Suíte - Testes Login', () => {
     })
 
     it('Deve exibir erro ao tentar logar com senha incorreta', () => {
-        loginActions.loginComCredenciaisInvalidas(Cypress.env('email'), "senhaIncorreta");
-        loginActions.verificarErroSenhaIncorreta(Cypress.env('email'));
+       // loginActions.loginComCredenciaisInvalidas(Cypress.env('email'), "senhaIncorreta");
+        //loginActions.verificarErroSenhaIncorreta(Cypress.env('email'));
+        loginActions.loginComCredenciaisInvalidas("qatester@gmail.com", "senhaIncorreta");
+        loginActions.verificarErroSenhaIncorreta("qatester@gmail.com");
     })
 
     it('Deve exibir erro ao tentar logar com o campo senha vazio', () => {
-        loginActions.loginComCredenciaisInvalidas(Cypress.env('email'), " ");
+        //loginActions.loginComCredenciaisInvalidas(Cypress.env('email'), " ");
+        //loginActions.verificarErroSenhavazio();
+        loginActions.loginComCredenciaisInvalidas("qatester@gmail.com", " ");
         loginActions.verificarErroSenhavazio();
     })
 
