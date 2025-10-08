@@ -1,4 +1,4 @@
-const LoginPage = require("../page_objects/LoginPage");
+const loginPage = require("../../pages/loginPage");
 const UsuarioFaker = require("../../factories/usuarioFaker");
 const { faker } = require("@faker-js/faker");
 
@@ -8,39 +8,39 @@ class LoginActions {
         //const email = Cypress.env('email');
         //const senha = Cypress.env('senha');
         //console.log('DEBUG email:', email, 'senha:', senha);
-        LoginPage.acessarLogin("qatestando@gmail.com", "654321");
-        LoginPage.submitLogin();
+        loginPage.acessarLogin("qatestando@gmail.com", "654321");
+        loginPage.submitLogin();
     }
     // login com credenciais inválidas
     loginComCredenciaisInvalidas(email, senha) {
         // Se email invalido não foi passado, gera um email faker
         const emailInvalido = email || faker.internet.email();
-        LoginPage.acessarLogin(emailInvalido, senha);
-        LoginPage.submitLogin();
+        loginPage.acessarLogin(emailInvalido, senha);
+        loginPage.submitLogin();
     }
 
     verificarLoginComSucesso(usuario) {
-        LoginPage.getSuccessMessageElement()
+        loginPage.getSuccessMessageElement()
             .should('contain', `Olá, ${usuario.username} (não é ${usuario.username}? Sair)`);
     }
 
     verificarErroUsuarioObrigatorio() {
-        LoginPage.getErrorMessage()
+        loginPage.getErrorMessage()
             .should('contain', 'Erro: Nome de usuário é obrigatório.');
     }
 
     verificarErroEmailInvalido() {
-        LoginPage.getErrorMessage()
+        loginPage.getErrorMessage()
             .should('contain', 'Endereço de e-mail desconhecido. Verifique novamente ou tente seu nome de usuário.');
     }
 
     verificarErroSenhaIncorreta(email) {
-        LoginPage.getErrorMessage()
+        loginPage.getErrorMessage()
             .should('contain', `Erro: A senha fornecida para o e-mail ${email} está incorreta. Perdeu a senha?`);
     }
 
     verificarErroSenhavazio() {
-        LoginPage.getErrorMessage()
+        loginPage.getErrorMessage()
             .should('contain', 'Erro: O campo da senha está vazio.');
     }
 }

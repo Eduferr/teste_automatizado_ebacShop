@@ -1,4 +1,4 @@
-const comprasPage = require('../page_objects/ComprasPage');
+const comprasPage = require('../pages/comprasPage');
 
 class ComprasActions {
 

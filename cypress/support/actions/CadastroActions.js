@@ -1,4 +1,5 @@
-const cadastroPage = require('../page_objects/CadastroPage');
+const cadastroPage = require('../pages/cadastroPage');
+
 
 class CadastroActions {
 

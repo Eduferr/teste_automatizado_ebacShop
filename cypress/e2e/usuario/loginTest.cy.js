@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-const loginActions = require("../../support/actions/LoginActions");
+const loginActions = require("../../support/actions/loginActions");
 
 describe('Suíte - Testes Login', () => {
 

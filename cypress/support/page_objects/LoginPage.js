@@ -2,7 +2,7 @@ class LoginPage {
 
     acessarLogin(email, senha) {
         cy.get('#username').type(email);
-        cy.get('#password').type(senha,{ log: false });
+        cy.get('#password').type(senha,{ log: false }); //log false para não exibir a senha no console
     }
 
     submitLogin() {
