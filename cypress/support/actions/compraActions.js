@@ -1,9 +1,9 @@
-const comprasPage = require('../pages/comprasPage');
+const comprasPage = require('../pageObjects/compraPage')
 
 class ComprasActions {
 
   buscarProduto(produto) {
-    comprasPage.SelectProduct(produto);
+    comprasPage.selectProduct(produto);
     comprasPage.submitBusca();
   }
 

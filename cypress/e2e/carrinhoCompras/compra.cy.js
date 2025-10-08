@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-const comprasActions = require('../../support/actions/comprasActions');
+const comprasActions = require('../../support/actions/compraActions');
 const loginActions = require('../../support/actions/loginActions');
 
 describe('Suíte - Carrinho de Compras', () => {

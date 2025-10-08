@@ -1,6 +1,6 @@
 class ComprasPage {
 
-    SelectProduct(produto) {
+    selectProduct(produto) {
         cy.get('input[placeholder="Enter your search ..."]').eq(1).type(produto);
     }
 

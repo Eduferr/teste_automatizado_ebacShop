@@ -4,7 +4,7 @@
   "description": "Automação do fluxo de cadastro de usuário e compra na loja virtual EBAC-Shop, com Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --headless --browser chrome"
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Eduferr/teste_automatizado_ebacShop#readme",
   "devDependencies": {
-    "cypress": "^15.3.0"
+    "cypress": "^15.4.0"
   },
   "dependencies": {
     "@faker-js/faker": "^10.0.0"
