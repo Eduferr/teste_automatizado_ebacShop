@@ -33,7 +33,6 @@ TESTE_AUTOMATIZADO_EBACSHOP
 ├── node_modules
 ├── cypress.config.js
 ├── cypress.env.json
-├── Jenkinsfile
 ├── package-lock.json
 └── package.json
 ```
