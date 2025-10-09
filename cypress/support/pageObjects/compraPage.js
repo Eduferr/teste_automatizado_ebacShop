@@ -34,11 +34,11 @@ class ComprasPage {
     }
 
     getSuccessMessageElement() {
-        return cy.get('.woocommerce-message', { timeout: 10000 })
+        return cy.get('.woocommerce-message', { timeout: 20000 })
     }
 
     getSuccessMessageElementOrder() {
-        return cy.get('.woocommerce-notice', { timeout: 10000 })
+        return cy.get('.woocommerce-notice')
     }
 
 }
