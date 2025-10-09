@@ -34,7 +34,7 @@ class ComprasPage {
     }
 
     getSuccessMessageElement() {
-        return cy.get('.woocommerce-message', { timeout: 50000 })
+        return cy.get('.woocommerce-message')
     }
 
     getSuccessMessageElementOrder() {
