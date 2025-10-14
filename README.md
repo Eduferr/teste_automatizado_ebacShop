@@ -141,7 +141,7 @@ A estrutura segue o padrão modular e escalável, com responsabilidades bem defi
 
 **Eduardo Ferreira**  
 *Quality Assurance (QA) Engineer*  
-🔗 *Automação de Testes | API | Cypress | JavaScript*  
+🔗 *Automação de Testes | e2e | Cypress | JavaScript*  
 🌐 [LinkedIn – Eduardo Ferreira](https://www.linkedin.com/in/edufgs/)  
 📅 Projeto desenvolvido para fins educacionais e de prática em automação de testes.
 
