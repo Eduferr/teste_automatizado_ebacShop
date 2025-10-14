@@ -4,7 +4,8 @@
   "description": "Automação do fluxo de cadastro de usuário e compra na loja virtual EBAC-Shop, com Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run"
+    "test": "cypress open",
+    "testHeadless": "cypress run"
   },
   "repository": {
     "type": "git",
