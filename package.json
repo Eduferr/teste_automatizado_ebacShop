@@ -1,0 +1,31 @@
+{
+  "name": "teste_automatizado_ebacshop_",
+  "version": "1.0.0",
+  "description": "Automação do fluxo de cadastro de usuário e compra na loja virtual EBAC-Shop, com Cypress",
+  "homepage": "https://github.com/Eduferr/teste_automatizado_ebacShop_#readme",
+  "bugs": {
+    "url": "https://github.com/Eduferr/teste_automatizado_ebacShop_/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eduferr/teste_automatizado_ebacShop_.git"
+  },
+  "license": "ISC",
+  "author": "EduardoFerreira",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "report:merge": "npx mochawesome-merge mochawesome-report/*.json -o mochawesome-report/report.json",
+    "report:generate": "npx marge mochawesome-report/report.json -f index -o mochawesome-report",
+    "cy:run:report": "npm run cy:run && npm run report:merge && npm run report:generate"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "cypress": "^15.6.0",
+    "cypress-mochawesome-reporter": "^1.0.1",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0"
+  }
+}
