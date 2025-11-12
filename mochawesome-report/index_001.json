@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-11-12T00:46:34.984Z",
+    "end": "2025-11-12T00:46:55.850Z",
+    "duration": 20866,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e235fa50-c37e-4387-b1ed-d937712c1912",
+      "title": "",
+      "fullFile": "cypress\\e2e\\usuario\\cadastro.cy.js",
+      "file": "cypress\\e2e\\usuario\\cadastro.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "65bb500b-e547-46ff-9986-300c9553db7b",
+          "title": "Suíte - Criar Conta de usuário",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve realizar o cadastro de usuário com sucesso",
+              "fullTitle": "Suíte - Criar Conta de usuário Deve realizar o cadastro de usuário com sucesso",
+              "timedOut": null,
+              "duration": 14823,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cadastroActions.cadastrarUsuario(usuario); // cadastra o usuário\ncadastroActions.verificarCadastroComSucesso(usuario); // verifica se o cadastro foi bem sucedido",
+              "err": {},
+              "uuid": "ebd56cd8-f72c-443d-a7f8-efac102dcc4e",
+              "parentUUID": "65bb500b-e547-46ff-9986-300c9553db7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve apresentar mensagem de ERRO para email já cadastrado",
+              "fullTitle": "Suíte - Criar Conta de usuário Deve apresentar mensagem de ERRO para email já cadastrado",
+              "timedOut": null,
+              "duration": 5666,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cadastroActions.cadastrarUsuario(usuario);\ncadastroActions.verificarErroEmailExistente();",
+              "err": {},
+              "uuid": "3ea7638e-362a-4557-982c-6dbdf2bab2f0",
+              "parentUUID": "65bb500b-e547-46ff-9986-300c9553db7b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ebd56cd8-f72c-443d-a7f8-efac102dcc4e",
+            "3ea7638e-362a-4557-982c-6dbdf2bab2f0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20489,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "index.html",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "reportFilename": "index.html",
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

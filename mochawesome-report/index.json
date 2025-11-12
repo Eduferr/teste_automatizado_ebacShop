@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 1,
+    "failures": 0,
+    "start": "2025-11-12T00:45:42.151Z",
+    "end": "2025-11-12T00:46:23.102Z",
+    "duration": 40951,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 50,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "23e75e94-ebea-4212-9c15-fa8c0cb4161d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\carrinhoCompras\\compra.cy.js",
+      "file": "cypress\\e2e\\carrinhoCompras\\compra.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "84eebb58-17be-4a95-8958-cf929208d70a",
+          "title": "Suíte - Carrinho de Compras",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve efetuar a compra buscando pelo nome do produto",
+              "fullTitle": "Suíte - Carrinho de Compras Deve efetuar a compra buscando pelo nome do produto",
+              "timedOut": null,
+              "duration": 40677,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('produtos').then(produtos => {\n  // Importa os dados do arquivo JSON\n  const produto = produtos[0];\n  comprasActions.buscarProduto(produto.nome);\n  comprasActions.selecionarCaracteristica(produto.tamanho, produto.cor, produto.quantidade);\n  comprasActions.AdicionarAoCarrinho();\n  comprasActions.validarMensagemDeSucesso(`${produto.quantidade} × “${produto.nome}” foram adicionados no seu carrinho.`);\n  comprasActions.verCarrinho();\n  comprasActions.concluirCompra();\n  loginActions.loginComCredenciaisValidas();\n  comprasActions.pagarCompra();\n  comprasActions.validarMensagemDeSucessoOrder('Obrigado. Seu pedido foi recebido.');\n});",
+              "err": {},
+              "uuid": "3c45aaeb-3572-4827-a579-098be5b2f683",
+              "parentUUID": "84eebb58-17be-4a95-8958-cf929208d70a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve efetuar a compra selecionando o item na lista de produtos",
+              "fullTitle": "Suíte - Carrinho de Compras Deve efetuar a compra selecionando o item na lista de produtos",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "//TODO",
+              "err": {},
+              "uuid": "71eff130-5bd2-4b28-afa4-7d38d3053b7e",
+              "parentUUID": "84eebb58-17be-4a95-8958-cf929208d70a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3c45aaeb-3572-4827-a579-098be5b2f683"
+          ],
+          "failures": [],
+          "pending": [
+            "71eff130-5bd2-4b28-afa4-7d38d3053b7e"
+          ],
+          "skipped": [],
+          "duration": 40677,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "index.html",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "reportFilename": "index.html",
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
