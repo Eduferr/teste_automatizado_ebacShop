@@ -1,0 +1,187 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-11-12T00:36:18.804Z",
+    "end": "2025-11-12T00:36:48.354Z",
+    "duration": 29550,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "216d3a35-8b85-4623-8f14-a3102ef975e5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\usuario\\login.cy.js",
+      "file": "cypress\\e2e\\usuario\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "789ae1ef-73b2-4fe3-865b-4852ab37a8e9",
+          "title": "Suíte - Testes Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve realizar o login com sucesso",
+              "fullTitle": "Suíte - Testes Login Deve realizar o login com sucesso",
+              "timedOut": null,
+              "duration": 7690,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginActions.loginComCredenciaisValidas();\nloginActions.verificarLoginComSucesso({\n  username: fixtureData.nome\n});",
+              "err": {},
+              "uuid": "14696a5c-fab1-41be-95dc-5abd3a25231e",
+              "parentUUID": "789ae1ef-73b2-4fe3-865b-4852ab37a8e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve exibir erro ao tentar logar sem informar o usuário",
+              "fullTitle": "Suíte - Testes Login Deve exibir erro ao tentar logar sem informar o usuário",
+              "timedOut": null,
+              "duration": 2271,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginActions.loginComCredenciaisInvalidas(\" \", 'senha123');\nloginActions.verificarErroUsuarioObrigatorio();",
+              "err": {},
+              "uuid": "17c13fae-bff2-4bdb-825e-068e759a871a",
+              "parentUUID": "789ae1ef-73b2-4fe3-865b-4852ab37a8e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve exibir erro ao tentar logar com email inválido",
+              "fullTitle": "Suíte - Testes Login Deve exibir erro ao tentar logar com email inválido",
+              "timedOut": null,
+              "duration": 2669,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginActions.loginComCredenciaisInvalidas(\"\", \"senha123\");\nloginActions.verificarErroEmailInvalido();",
+              "err": {},
+              "uuid": "30080f91-1db0-45c1-8538-49ad6b183e84",
+              "parentUUID": "789ae1ef-73b2-4fe3-865b-4852ab37a8e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve exibir erro ao tentar logar com senha incorreta",
+              "fullTitle": "Suíte - Testes Login Deve exibir erro ao tentar logar com senha incorreta",
+              "timedOut": null,
+              "duration": 13008,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "loginActions.loginComCredenciaisInvalidas(Cypress.env('email'), \"senhaIncorreta\");\nloginActions.verificarErroSenhaIncorreta(Cypress.env('email'));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<ul.woocommerce-error>' to contain 'Erro: A senha fornecida para o e-mail undefined está incorreta. Perdeu a senha?'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<ul.woocommerce-error>' to contain 'Erro: A senha fornecida para o e-mail undefined está incorreta. Perdeu a senha?'\n    at LoginActions.verificarErroSenhaIncorreta (webpack://teste_automatizado_ebacshop_/./cypress/support/actions/loginActions.js:42:13)\n    at Context.eval (webpack://teste_automatizado_ebacshop_/./cypress/e2e/usuario/login.cy.js:31:21)",
+                "diff": null
+              },
+              "uuid": "c940994f-0928-456f-9639-2aca7a8b479e",
+              "parentUUID": "789ae1ef-73b2-4fe3-865b-4852ab37a8e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve exibir erro ao tentar logar com o campo senha vazio",
+              "fullTitle": "Suíte - Testes Login Deve exibir erro ao tentar logar com o campo senha vazio",
+              "timedOut": null,
+              "duration": 3670,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginActions.loginComCredenciaisInvalidas(Cypress.env('email'), \" \");\nloginActions.verificarErroSenhavazio();",
+              "err": {},
+              "uuid": "415dddfe-ecf8-438e-868b-4c338e3e3b87",
+              "parentUUID": "789ae1ef-73b2-4fe3-865b-4852ab37a8e9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "14696a5c-fab1-41be-95dc-5abd3a25231e",
+            "17c13fae-bff2-4bdb-825e-068e759a871a",
+            "30080f91-1db0-45c1-8538-49ad6b183e84",
+            "415dddfe-ecf8-438e-868b-4c338e3e3b87"
+          ],
+          "failures": [
+            "c940994f-0928-456f-9639-2aca7a8b479e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 29308,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "index.html",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "reportFilename": "index.html",
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
