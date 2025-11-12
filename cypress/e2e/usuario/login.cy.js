@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const loginActions = require("../../support/actions/loginActions")
+const fixtureData = require('../../fixtures/data.json');
 
 describe('Suíte - Testes Login', () => {
 
@@ -11,7 +12,7 @@ describe('Suíte - Testes Login', () => {
     it('Deve realizar o login com sucesso', () => {
         loginActions.loginComCredenciaisValidas();
         loginActions.verificarLoginComSucesso({
-            username: Cypress.env('nome')
+            username: fixtureData.nome
         });
     });
 

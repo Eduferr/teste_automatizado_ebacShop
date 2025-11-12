@@ -1,13 +1,15 @@
 const loginPage = require("../pageObjects/loginPage");
 const UsuarioFaker = require("../../factories/usuarioFaker");
 const { faker } = require("@faker-js/faker");
-
+const fixtureData = require('../../fixtures/data.json');
 
 class LoginActions {
     // login com credenciais válidas
     loginComCredenciaisValidas() {
-        const email = Cypress.env('email');
-        const senha = Cypress.env('senha');
+       // const email = Cypress.env('email');
+       // const senha = Cypress.env('senha');
+        const email = fixtureData.email;
+        const senha = fixtureData.password;
         //console.log('DEBUG email:', email, 'senha:', senha);
         loginPage.acessarLogin(email, senha);
         loginPage.submitLogin();
