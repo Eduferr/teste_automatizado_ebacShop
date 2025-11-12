@@ -10,7 +10,7 @@ class LoginPage {
     }
 
     getErrorMessage() {
-        return cy.get('.woocommerce-error', {timeout: 20000});
+        return cy.get('.woocommerce-error', {timeout: 10000});
     }
 
     getSuccessMessageElement() {

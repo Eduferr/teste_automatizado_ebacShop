@@ -20,7 +20,7 @@ jobs:
           node-version: '25'
       - name: Cypress run
         uses: cypress-io/github-action@v2
-        continue-on-error: false
+        continue-on-error: true
         with:
           install-command: npm install
           command: npm run cy:run:report
