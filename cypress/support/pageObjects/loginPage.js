@@ -10,11 +10,11 @@ class LoginPage {
     }
 
     getErrorMessage() {
-        return cy.get('.woocommerce-error');
+        return cy.get('.woocommerce-error', {timeout: 10000});
     }
 
     getSuccessMessageElement() {
-        return cy.get('.woocommerce-MyAccount-content > :nth-child(2)');
+        return cy.get('.woocommerce-MyAccount-content > :nth-child(2)', {timeout: 10000});
     }
 }
 
