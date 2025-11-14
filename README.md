@@ -59,7 +59,6 @@ TESTE_AUTOMATIZADO_EBACSHOP
 ---
 
 ## 🗂️ Estrutura de Pastas e Responsabilidades
-
 | Diretório / Arquivo                 | Descrição                                                |
 | ----------------------------------- | -------------------------------------------------------- |
 | `cypress/e2e`                       | Contém as suítes de testes automatizados                 |
@@ -72,7 +71,6 @@ TESTE_AUTOMATIZADO_EBACSHOP
 ---
 
 ## 🧱 Arquitetura de Teste
-
 A estrutura segue o padrão modular e escalável, com responsabilidades bem definidas:
 
 - Page Object (POM) → Centraliza os elementos e ações de cada página.
@@ -127,7 +125,6 @@ A estrutura segue o padrão modular e escalável, com responsabilidades bem defi
 ---
 
 ## 🚀 Execução dos Testes
-
 | Modo                          | Descrição                            | Comando                                                    |
 | :---------------------------- | :----------------------------------- | :--------------------------------------------------------- |
 | **Interativo (GUI)**          | Abre o painel do Cypress             | `npx cypress open`                                         |
