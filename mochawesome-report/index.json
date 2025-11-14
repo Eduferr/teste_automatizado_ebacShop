@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 1,
     "failures": 0,
-    "start": "2025-11-12T00:45:42.151Z",
-    "end": "2025-11-12T00:46:23.102Z",
-    "duration": 40951,
+    "start": "2025-11-14T20:48:39.473Z",
+    "end": "2025-11-14T20:49:22.288Z",
+    "duration": 42815,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 50,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "23e75e94-ebea-4212-9c15-fa8c0cb4161d",
+      "uuid": "717d7f0a-71ad-48aa-b1aa-f341fbf5fa8d",
       "title": "",
-      "fullFile": "cypress\\e2e\\carrinhoCompras\\compra.cy.js",
-      "file": "cypress\\e2e\\carrinhoCompras\\compra.cy.js",
+      "fullFile": "cypress/e2e/carrinhoCompras/compra.cy.js",
+      "file": "cypress/e2e/carrinhoCompras/compra.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "84eebb58-17be-4a95-8958-cf929208d70a",
+          "uuid": "0d4a636f-81b0-4963-94b9-37c22aa12339",
           "title": "Suíte - Carrinho de Compras",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve efetuar a compra buscando pelo nome do produto",
               "fullTitle": "Suíte - Carrinho de Compras Deve efetuar a compra buscando pelo nome do produto",
               "timedOut": null,
-              "duration": 40677,
+              "duration": 42378,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.fixture('produtos').then(produtos => {\n  // Importa os dados do arquivo JSON\n  const produto = produtos[0];\n  comprasActions.buscarProduto(produto.nome);\n  comprasActions.selecionarCaracteristica(produto.tamanho, produto.cor, produto.quantidade);\n  comprasActions.AdicionarAoCarrinho();\n  comprasActions.validarMensagemDeSucesso(`${produto.quantidade} × “${produto.nome}” foram adicionados no seu carrinho.`);\n  comprasActions.verCarrinho();\n  comprasActions.concluirCompra();\n  loginActions.loginComCredenciaisValidas();\n  comprasActions.pagarCompra();\n  comprasActions.validarMensagemDeSucessoOrder('Obrigado. Seu pedido foi recebido.');\n});",
               "err": {},
-              "uuid": "3c45aaeb-3572-4827-a579-098be5b2f683",
-              "parentUUID": "84eebb58-17be-4a95-8958-cf929208d70a",
+              "uuid": "2d541784-29d0-46e6-ba90-f56220b21537",
+              "parentUUID": "0d4a636f-81b0-4963-94b9-37c22aa12339",
               "isHook": false,
               "skipped": false
             },
@@ -65,22 +65,22 @@
               "context": null,
               "code": "//TODO",
               "err": {},
-              "uuid": "71eff130-5bd2-4b28-afa4-7d38d3053b7e",
-              "parentUUID": "84eebb58-17be-4a95-8958-cf929208d70a",
+              "uuid": "765cafc6-4836-42e3-84e7-83e555ef2610",
+              "parentUUID": "0d4a636f-81b0-4963-94b9-37c22aa12339",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3c45aaeb-3572-4827-a579-098be5b2f683"
+            "2d541784-29d0-46e6-ba90-f56220b21537"
           ],
           "failures": [],
           "pending": [
-            "71eff130-5bd2-4b28-afa4-7d38d3053b7e"
+            "765cafc6-4836-42e3-84e7-83e555ef2610"
           ],
           "skipped": [],
-          "duration": 40677,
+          "duration": 42378,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
